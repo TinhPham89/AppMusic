@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragmentBanner"
+            android:name="com.btcsc.appmp3.fragment.AdvertisementFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </fragment>
+        <fragment
+            android:id="@+id/chooseType"
+            android:layout_width="match_parent"
+            android:layout_height="335dp"
+            android:name="com.btcsc.appmp3.fragment.TabChooseTypeFragment">
+        </fragment>
+
+        <fragment
+            android:id="@+id/chude"
+            android:layout_width="match_parent"
+            android:layout_height="703dp"
+            android:name="com.btcsc.appmp3.fragment.ChudeFragment">
+        </fragment>
+        <fragment
+            android:id="@+id/theloai"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:name="com.btcsc.appmp3.fragment.TheloaiFragment">
+        </fragment>
+        <fragment
+            android:id="@+id/baihathot"
+            android:layout_width="match_parent"
+            android:layout_height="1225dp"
+            android:name="com.btcsc.appmp3.fragment.BaihathotFragment">
+        </fragment>
+
+    </LinearLayout>
+
+
+</ScrollView>

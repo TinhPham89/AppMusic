@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    tools:context=".fragment.PlayNhacInformationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/imgBaiHatPhatNhac"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_banner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNameBaiHatPhatNhac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:maxLines="2"
+        android:text="thuong em la dieu aanh khong the ngo"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgBaiHatPhatNhac"
+        app:layout_constraintTop_toTopOf="@+id/imgBaiHatPhatNhac" />
+
+    <TextView
+        android:id="@+id/txtNameCaSiPhatNhac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:maxLines="2"
+        android:text="Soon Bin Hoàng Sơn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtNameBaiHatPhatNhac"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameBaiHatPhatNhac" />
+
+    <TextView
+        android:id="@+id/txtNameAlbumPhatNhac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:maxLines="2"
+        android:text="Tuyển taaph hay nhất balavbaala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtNameCaSiPhatNhac"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameCaSiPhatNhac" />
+
+    <TextView
+        android:id="@+id/txtTheLoaiPhatNhac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:maxLines="2"
+        android:text="nhac trự x tinhda, nhac bolero , nhac tá lả"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtNameAlbumPhatNhac"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameAlbumPhatNhac" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thể loại nổi bật"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imgBaiHatPhatNhac"
+        app:layout_constraintTop_toBottomOf="@+id/imgBaiHatPhatNhac" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPhatNhac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+</androidx.constraintlayout.widget.ConstraintLayout>
